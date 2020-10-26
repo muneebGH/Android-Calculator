@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/result_tv"
+        android:textAlignment="viewEnd"
+        android:textColor="#161616"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/c7"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_marginTop="30dp"
+        android:onClick="buttonsClickHandler"
+        android:text="7"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c8"
+        app:layout_constraintEnd_toStartOf="@+id/c8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <Button
+        android:id="@+id/c8"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_marginTop="30dp"
+        android:onClick="buttonsClickHandler"
+        android:text="8"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c9"
+        app:layout_constraintEnd_toStartOf="@+id/c9"
+        app:layout_constraintStart_toEndOf="@+id/c7"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/c9"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_marginTop="30dp"
+        android:onClick="buttonsClickHandler"
+        android:text="9"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@id/cslash"
+        app:layout_constraintEnd_toStartOf="@+id/cslash"
+        app:layout_constraintStart_toEndOf="@+id/c8"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/cslash"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF9800"
+        android:onClick="buttonsClickHandler"
+        android:shadowColor="#9C27B0"
+        android:shadowDx="2"
+        android:text="/"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/c9"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+    <Button
+        android:id="@+id/c4"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:onClick="buttonsClickHandler"
+        android:text="4"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c5"
+        app:layout_constraintEnd_toStartOf="@+id/c5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c7" />
+
+    <Button
+        android:id="@+id/c5"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:onClick="buttonsClickHandler"
+        android:text="5"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c6"
+        app:layout_constraintEnd_toStartOf="@+id/c6"
+        app:layout_constraintStart_toEndOf="@+id/c4"
+        app:layout_constraintTop_toBottomOf="@+id/c8" />
+
+    <Button
+        android:id="@+id/c6"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:onClick="buttonsClickHandler"
+        android:text="6"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cstar"
+        app:layout_constraintEnd_toStartOf="@+id/cstar"
+        app:layout_constraintStart_toEndOf="@+id/c5"
+        app:layout_constraintTop_toBottomOf="@+id/c9" />
+
+    <Button
+        android:id="@+id/cstar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:backgroundTint="#FF9800"
+        android:onClick="buttonsClickHandler"
+        android:text="*"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/cminus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/c6"
+        app:layout_constraintTop_toBottomOf="@+id/cslash" />
+
+    <Button
+        android:id="@+id/c1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:onClick="buttonsClickHandler"
+        android:text="1"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c2"
+        app:layout_constraintEnd_toStartOf="@+id/c2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c4" />
+
+    <Button
+        android:id="@+id/c2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:onClick="buttonsClickHandler"
+        android:text="2"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c3"
+        app:layout_constraintEnd_toStartOf="@+id/c3"
+        app:layout_constraintStart_toEndOf="@+id/c1"
+        app:layout_constraintTop_toBottomOf="@+id/c5" />
+
+    <Button
+        android:id="@+id/c3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:onClick="buttonsClickHandler"
+        android:text="3"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cminus"
+        app:layout_constraintEnd_toStartOf="@+id/cminus"
+        app:layout_constraintStart_toEndOf="@+id/c2"
+        app:layout_constraintTop_toBottomOf="@+id/c6" />
+
+    <Button
+        android:id="@+id/cminus"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:backgroundTint="#FF9800"
+        android:onClick="buttonsClickHandler"
+        android:text="-"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/c3"
+        app:layout_constraintTop_toBottomOf="@+id/cstar" />
+
+    <Button
+        android:id="@+id/cdot"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:onClick="buttonsClickHandler"
+        android:text="."
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c0"
+        app:layout_constraintEnd_toStartOf="@+id/c0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c1" />
+
+    <Button
+        android:id="@+id/c0"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:onClick="buttonsClickHandler"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cc"
+        app:layout_constraintEnd_toStartOf="@+id/cc"
+        app:layout_constraintStart_toEndOf="@+id/cdot"
+        app:layout_constraintTop_toBottomOf="@+id/c2" />
+
+    <Button
+        android:id="@+id/cc"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:onClick="buttonsClickHandler"
+        android:text="C"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cplus"
+        app:layout_constraintEnd_toStartOf="@+id/cplus"
+        app:layout_constraintStart_toEndOf="@+id/c0"
+        app:layout_constraintTop_toBottomOf="@+id/c3" />
+
+    <Button
+        android:id="@+id/cplus"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonHeight"
+        android:backgroundTint="#FF9800"
+        android:onClick="buttonsClickHandler"
+        android:text="+"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cc"
+        app:layout_constraintTop_toBottomOf="@+id/cminus" />
+
+    <Button
+        android:id="@+id/cequal"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/buttonHeight"
+        android:backgroundTint="#2196F3"
+        android:onClick="buttonsClickHandler"
+        android:text="="
+        android:textColor="#F9F9F9"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
